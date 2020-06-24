@@ -6,6 +6,5 @@ const workers = [
 function getWorthyWorkers(workers) {
 
 }
-}
 
 console.log(getWorthyWorkers(workers))
