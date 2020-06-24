@@ -1,7 +1,7 @@
 const path = ft("/users/download/index.html");
 
 function ft(path) {
-  var exp = path.slice(-5);
+  let exp = path.slice(-5);
   if (exp == '.html') {
     return true;
   } else {
