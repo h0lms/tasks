@@ -3,8 +3,6 @@ const workers = [
   {"name":"Mike","salary":1300},
   {"name":"Linda","salary":1500}];
 
-function getWorthyWorkers(workers) {
+  workers.forEach(element => console.log(element));
 
-}
-
-console.log(getWorthyWorkers(workers))
+// console.log(getWorthyWorkers(workers))
