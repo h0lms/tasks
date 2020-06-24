@@ -3,6 +3,11 @@ const workers = [
   {"name":"Mike","salary":1300},
   {"name":"Linda","salary":1500}];
 
-  workers.forEach(element => console.log(element));
+let workersBest = workers.filter(el => {
+  return el.salary > 1000;
+}
+);
 
-// console.log(getWorthyWorkers(workers))
+for (let i = 0; i < workersBest.length; i++) {
+  console.log(workersBest[i].name);
+}
