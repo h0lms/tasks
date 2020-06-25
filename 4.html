@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Простой слайдер</h1>
+  <p>Это простейший слайдер элементов. При клике на правую стрелочку, элементы должны сдвигаться вправо. При клике на левую стрелочку, элементы должны сдвигаться влево.</p>
+  <p><a href="/">Назад</a></p>
+
+<section class="slider">
+  <a href="" class="btn btn-left">Туда</a>
+  <div class="wrapper">
+    <ul class="slider__list">
+      <li class="slider__item">1</li>
+      <li class="slider__item">2</li>
+      <li class="slider__item">3</li>
+      <li class="slider__item">4</li>
+      <li class="slider__item">5</li>
+      <li class="slider__item">6</li>
+    </ul>
+  </div>
+  <a href="" class="btn btn-right">Сюда</a>
+</section>
+
+<script>
+    const myButton = document.querySelector('#myButton');
+    const container = document.querySelector('#container')
+
+    myButton.addEventListener('click', function() {
+      container.style.color = 'red';
+    });
+
+    container.addEventListener('click', function () {
+      console.log('клик по контейнеру');
+    })
+</script>
+
+</body>
+</html>

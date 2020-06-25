@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__list {
+  display: flex;
+  padding: 0;
+  position: relative;
+}
+
+.slider__item {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: block;
+}
+
+.wrapper {
+  margin: 20px;
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+}
