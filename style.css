@@ -12,6 +12,8 @@
   display: flex;
   padding: 0;
   position: relative;
+  transition: 2s;
+  right: 0px;
 }
 
 .slider__item {
@@ -20,10 +22,20 @@
   border: 1px solid black;
   display: block;
 }
+.slider__item:nth-child(2n) {
+  background-color: red;
+  opacity: 0.5;
+}
 
 .wrapper {
   margin: 20px;
   width: 300px;
   overflow: hidden;
   display: flex;
+}
+
+.btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: red;
 }

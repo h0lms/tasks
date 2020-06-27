@@ -12,6 +12,8 @@
   display: flex;
   padding: 0;
   position: relative;
+  transition: 2s;
+  right: 0px;
 }
 
 .slider__item {
@@ -19,6 +21,10 @@
   height: 100px;
   border: 1px solid black;
   display: block;
+  &:nth-child(2n) {
+    background-color: red;
+    opacity: .5;
+  }
 }
 
 .wrapper {
@@ -26,4 +32,12 @@
   width: 300px;
   overflow: hidden;
   display: flex;
+}
+
+.btn {
+  &:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: red;
+  }
 }

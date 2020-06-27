@@ -12,7 +12,7 @@
   <p><a href="/">Назад</a></p>
 
 <section class="slider">
-  <a href="" class="btn btn-left">Туда</a>
+  <span class="btn btn-left">Туда</span>
   <div class="wrapper">
     <ul class="slider__list">
       <li class="slider__item">1</li>
@@ -23,15 +23,16 @@
       <li class="slider__item">6</li>
     </ul>
   </div>
-  <a href="" class="btn btn-right">Сюда</a>
+  <span class="btn btn-right">Сюда</span>
 </section>
 
 <script>
-    const myButton = document.querySelector('#myButton');
+    const btn = document.querySelector('.btn');
+    const slider__list = document.querySelector('.slider__list');
     const container = document.querySelector('#container')
 
-    myButton.addEventListener('click', function() {
-      container.style.color = 'red';
+    btn.addEventListener('click', function() {
+      slider__list.style.right = '100px';
     });
 
     container.addEventListener('click', function () {
