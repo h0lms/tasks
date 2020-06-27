@@ -3,22 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Модальное окно (Вариант 1)</title>
+  <title>Модальное окно (Вариант 3)</title>
   <link rel="stylesheet" href="./style.css">
+  <script type="html/template" id="overlayTemplate">
+      <div class="modal-container">
+        <a class="close" href="#">x</a>
+        <div class="content"></div>
+      </div>
+  </script>
 </head>
 <body>
-  <h1>Модальное окно (Вариант 1)</h1>
+  <h1>Модальное окно (Вариант 3) - Шаблоны</h1>
   <p>На странице создан произвольный контент и кнопка вызова модального окна. По нажатию нужно отобразить оверлей (блок с затемнением) и модальное окно по середине экрана. Разметка внутри оверлея должа быть создана при помощи javaScript. Закрыть модальное окно можно нажатием на кнопку закрыть либо по клику вне области модального окна.</p>
   
   <div class="container">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, soluta vel! Quas doloremque officia voluptas fuga omnis. Autem vel ducimus, officiis quibusdam, eligendi quos fugiat enim amet ipsa ipsam maxime.</p>
     <button class="btn" id="openOverlay">Открыть</button>
   </div>
-  
+
+  <p><a href="./5.html">Вариант 1</a></p>
   <p><a href="./5-1.html">Вариант 2</a></p>
-  <p><a href="./5-2.html">Вариант 3</a></p>
   <p><a href="./">На главную</a></p>
   
-  <script src="./js/task-5.js"></script>
+  <script src="./js/task-5-2.js"></script>
 </body>
 </html>
