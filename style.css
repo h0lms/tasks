@@ -22,6 +22,7 @@ ul, li {
 }
 
 .items {
+  right: 0;
   display: flex;
   position: relative;
   color: #444;

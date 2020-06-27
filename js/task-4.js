@@ -4,7 +4,7 @@ const items = document.querySelector("#items");
 
 let currentRight = 0;
 
-rightBtn.addEventListener("click", e => {
+rightBtn.addEventListener('click', e => {
   e.preventDefault();
 
   currentRight += 100;
