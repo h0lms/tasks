@@ -1,31 +1,23 @@
 const leftBtn = document.querySelector("#left");
 const rightBtn = document.querySelector("#right");
 const items = document.querySelector("#items");
-
-let currentRight = 0;
+const computedStyles = getComputedStyle(items);
 
 rightBtn.addEventListener('click', e => {
   e.preventDefault();
+  let currentRight = parseInt(computedStyles.right);
 
-  currentRight += 100;
-
-  items.style.right = `${currentRight}px`;
+  if (currentRight < 500 ) {
+    items.style.right = `${currentRight + 100}px`;
+  }
 
 });
 
 leftBtn.addEventListener("click", e => {
+  e.preventDefault();
+  let currentRight = parseInt(computedStyles.right);
 
+  if (currentRight > 0) {
+    items.style.right = `${currentRight - 100}px`;
+  }
 });
-
-// Test
-// const btn = document.querySelector('.btn');
-// const slider__list = document.querySelector('.slider__list');
-// const container = document.querySelector('#container')
-
-// btn.addEventListener('click', function () {
-//   slider__list.style.right = '100px';
-// });
-
-// container.addEventListener('click', function () {
-//   console.log('клик по контейнеру');
-// })
