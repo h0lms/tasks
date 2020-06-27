@@ -11,7 +11,16 @@ openButton.addEventListener("click", e => {
   const contentElement = document.createElement("div");
   contentElement.classList.add("content");
 
-  overlayElement.appendChild("containerElement");
-  containerElement.appendChild("contentElement");
+  contentElement.innerHTML = "Hello <b>world</b>!";
+
+  const closeElement = document.createElement("a");
+  closeElement.classList.add("close");
+  closeElement.textContent = "x";
+  closeElement.href ="#";
+
+
+  overlayElement.appendChild(containerElement);
+  containerElement.appendChild(closeElement);
+  containerElement.appendChild(contentElement);
   body.appendChild(overlayElement);
 })
